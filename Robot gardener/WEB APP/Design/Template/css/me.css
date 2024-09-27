@@ -1,0 +1,29 @@
+/*
+	RzhevskyRobotics 2019
+	CyberneticCore Team
+	me.css
+	Author: Fedorov A.S.;
+*/
+
+
+
+/* ========================================================= */
+/*                      MAIN CONTENT                         */
+/* ========================================================= */
+
+p.request-ok{
+	color: green;
+	padding-right: 0px;
+}
+
+p.request-error{
+	color: red;
+	padding-right: 0px;
+}
+
+button.relay-on{
+	color: green;
+}
+button.relay-off{
+	color: red;
+}

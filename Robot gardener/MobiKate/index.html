@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Me</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=350,height=520">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Подключаем библиотеку jQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Подключаем наш скрипт ядра приложения -->
+    <script type="text/javascript" src="js/core.js"></script>
+</head>
+
+<body>
+
+    <!-- Главный и основной контейнер -->
+    <div class="main-container-grid">
+        <div class="main-header">
+            <div class="logo-container">
+                <img src="img/Logo.svg" />
+            </div>
+            
+            <h2>Name programm</h2>
+        </div>
+
+        <div class="main-content">
+            <div class="box-container-horizontal">
+                <div class="progress-fon">
+                    <img src="img/Water.svg" />
+
+                    <span id="progress-fon__persent"></span>
+                </div>
+
+                <svg class="progress-ring" width="190" height="190">
+                    <circle class="progress-ring__circle" stroke="#6F8EE8" stroke-width="7" stroke-linecap="round" cx="95" cy="95" r="81" fill="transparent"></circle>
+                </svg>
+            </div>
+
+            <div class="box-container-horizontal">
+                <button id="button-watering-relay" class="button-off-on">
+                    <img src="img/Watering.svg" />
+
+                    <span>off</span>
+                </button>
+
+                <button id="button-light-relay" class="button-off-on">
+                    <img src="img/Light.svg" />
+
+                    <span>off</span>
+                </button>
+            </div>
+
+            <div class="box-container-horizontal">
+                <div class="range-line">
+                    <p>Target humidity</p>
+
+                    <div class="range-container">
+                        <input id="range-one" type="range" min="0" max="100" step="1" value="80" oninput="fun()">
+
+                        <p class="range-line__value"><span id="one"></span> %</p>
+                    </div>
+                </div>
+
+                <div class="range-line">
+                    <p>Lighting period</p>
+
+                    <div class="range-container">
+                        <input id="range-two" type="range" min="0" max="60" step="1" value="30" oninput="fun()">
+
+                        <p class="range-line__value"><span id="two"></span> min</p>
+                    </div>
+                </div>
+
+                <div class="range-line">
+                    <p>Lighting duration</p>
+
+                    <div class="range-container">
+                        <input id="range-three" type="range" min="0" max="60" step="1" value="10" oninput="fun()">
+
+                        <p class="range-line__value"><span id="three"></span> min<p>
+                    </div>
+                </div>
+            </div>
+            <button id="button-set">set</button>
+        </div>
+    </div>
+
+    <!-- Подключаем наш скрипт для реализации логики -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

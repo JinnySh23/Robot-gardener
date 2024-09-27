@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Me</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=350,height=520">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/me.css">
+
+	<!-- Connecting the library jQuery -->
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <!-- Connecting our application core script -->
+	<script type="text/javascript" src="../js/core.js"></script>
+	<!-- We connect our script to implement the logic -->
+	<script type="text/javascript" src="../js/me.js"></script>
+</head>
+
+<body>
+
+	<!-- Main and main container -->
+	<div class="main-container-grid">
+		<div class="main-content">
+			<div class="box-container-horizontal">
+				<p>Humidity:</p>
+				<div id="div-request-humidity">
+					<p style="padding-right: 0;">0/</p>
+					<p>100%</p>
+				</div>
+				
+			</div>
+			<div class="box-container-horizontal">
+				<p>Watering:</p>
+				<div id="box-container-button-watering">
+					<button class="relay-off" id="button-watering-relay">OFF</button>
+				</div>
+			</div>
+			<div class="box-container-horizontal">
+				<p>Light:</p>
+				<div id="box-container-button-light">
+					<button class="relay-off" id="button-light-relay">OFF</button>
+				</div>
+			</div>
+			<hr>
+			<div class="box-container-horizontal">
+				<p>Target humidity:</p>
+				<input name="target-humidity"><p>%</p>
+			</div>
+			<div class="box-container-horizontal">
+				<p>Lighting from:</p>
+				<input name="lighting-from-hours"><p>hours</p>
+			</div>
+			<div class="box-container-horizontal">
+				<p>Lighting to:</p>
+				<input name="lighting-to-hours"><p>hours</p>
+			</div>
+			<button id="button-set">SET</button>
+		</div>
+	</div>
+</body>
+</html>
