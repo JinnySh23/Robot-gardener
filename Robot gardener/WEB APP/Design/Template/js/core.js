@@ -8,7 +8,7 @@
 
 
 // ===================== CONSTANTS =========================
-const APP_HOST = "192.168.2.203"
+const APP_HOST = "YOUR_HOST"
 
 // A function for sending GET with a parameter in data
 function ajax_getParametr(parameter,target_humidity,lighting_from_hours,lighting_to_hours,reciever) {
